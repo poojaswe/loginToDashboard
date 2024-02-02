@@ -1,0 +1,84 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    background: rgb(12,40,23);
+    color:aliceblue;
+    margin:0;
+}
+
+form{
+    position: relative;
+    z-index: 1;
+    background: #9CC532;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(255,255,255,0.7);
+}
+
+input{
+    outline: 0;
+    background: rgb(188, 212, 121);
+    color: rgb(12,40,23);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 20px;
+}
+::placeholder{color: rgb(22, 68, 40);}
+
+input:focus{
+    border: 2px solid rgb(14, 27, 11);
+}
+
+.inputElement{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+}
+
+.inputElement.error input {
+    border: 2px solid rgb(155, 19, 19);
+}
+.inputElement .error{
+    color:rgb(155, 19, 19);
+    font-size:x-small;
+    padding-left: 5px;
+}
+
+button{
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(12,40,23);
+    width: 100%;
+    border: 2px solid rgb(167, 189, 162);
+    padding: 15px;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom:15px ;
+}
+
+button:hover,button:active,button:focus{
+    background: rgb(188, 212, 121);
+    color: rgb(12,40,23);
+    border: 2px solid rgb(14, 27, 11);
+}
+
+a{
+    color: #dfeae3;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.register{
+    display: none;
+}
