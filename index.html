@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form class="register">
+                <div class="inputElement">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="inputElement">
+                    <input type="text" name="username" placeholder="Username">
+                    <span class="error"></span>
+                </div>
+                <div class="inputElement">
+                    <input type="password" name="password" placeholder="Password">
+                    <span class="error"></span>
+                </div>
+                <button type="submit">Register</button>
+                <a href="#">Already Registered?</a>
+            </form>
+            <form class="login">
+                <input type="text" name="username" placeholder="Username" class="inputElement" required>
+                <input type="password" name="password" placeholder="Password"class="inputElement"  required>
+                <button type="submit">Login</button>
+                <a href="#">Create Account</a>
+            </form>
+        </div>
+    </div>
+    <script>
+        $('a').click(function(){
+            $('form').animate({height:"toggle",opacity:"toggle"},600)
+        })
+    </script>
+</body>
+</html>
