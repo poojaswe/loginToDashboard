@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header, .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(12,40,23);
+            color: aliceblue;
+            height: 10%;
+        }
+
+        .information {
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+        }
+        .aside{
+            flex-grow:1;
+            background: #9CC532; 
+        }
+        
+        .article{
+            flex-grow: 2;
+            background: #bed18d;
+        }
+        .article,.aside{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: 600px) {
+            .information {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="information">
+            <div class="aside">Aside</div>
+            <div class="article">Article</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
